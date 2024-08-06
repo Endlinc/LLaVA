@@ -369,6 +369,17 @@ Answer the questions.""",
     sep="<|im_end|>",
 )
 
+conv_qwen2 = Conversation(
+    system="""<|im_start|>
+Answer the questions.""",
+    version="qwen2",
+    roles=("<|im_start|>user\n", "<|im_start|>assistant\n"),
+    messages=(),
+    offset=0,
+    sep_style=SeparatorStyle.MPT,
+    sep="<|im_end|>",
+)
+
 default_conversation = conv_vicuna_v1
 conv_templates = {
     "default": conv_vicuna_v0,
@@ -387,6 +398,7 @@ conv_templates = {
     "llava_v1": conv_llava_v1,
     "v1_mmtag": conv_llava_v1_mmtag,
     "llava_llama_2": conv_llava_llama_2,
+    "qwen2": conv_qwen2,
 
     "mpt": conv_mpt,
 }
