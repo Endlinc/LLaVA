@@ -1,7 +1,7 @@
 #!/bin/bash
 
 deepspeed llava/train/train_mem.py \
-    --deepspeed ./scripts/zero3.json \
+    --deepspeed ./scripts/zero3_offload.json \
     --model_name_or_path Qwen/Qwen2-7B \
     --version qwen2 \
     --data_path ./playground/data/llava_v1_5_mix665k.json \
