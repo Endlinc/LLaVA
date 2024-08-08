@@ -30,7 +30,6 @@ import tokenizers
 from llava.constants import IGNORE_INDEX, IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN
 from torch.utils.data import Dataset
 
-from llava.model.language_model.llava_qwen2 import LlavaQwen2ForCausalLM
 from llava.train.llava_trainer import LLaVATrainer
 
 from llava import conversation as conversation_lib

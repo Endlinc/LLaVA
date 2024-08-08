@@ -1,6 +1,7 @@
 from typing import Optional, List, Union, Tuple, Callable
 
 import torch
+from torch import nn
 from transformers import Qwen2Config, Qwen2Model, Qwen2ForCausalLM, GenerationConfig, LogitsProcessorList, \
     StoppingCriteriaList, AutoConfig, AutoModelForCausalLM
 from transformers.generation.utils import GenerateOutput
